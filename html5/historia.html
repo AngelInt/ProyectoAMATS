@@ -1,0 +1,130 @@
+<html>
+<head>
+	<title>Orquesta Infanto-Juvenil de Ahuachapán</title>
+	<link rel="stylesheet" type="text/css" href="../boots/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../boots/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../boots/css/sb-admin-2.css">
+	<link rel="stylesheet" type="text/css" href="../boots/css/proyecto.css">
+
+
+	<script type="text/javascript" src="../boots/js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="../boots/js/bootstrap.js"></script>
+	<script type="text/javascript" src="../boots/js/proyecto.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+</head>
+
+<body style="margin-top: 70px; text-align: center;" background="../imagenes/fondo.png">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			        <div class="navbar-header">
+			            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+			                <span class="sr-only">Desplegar navegación</span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			            </button>
+			            <a class="navbar-brand" href="../index.html"><i><span class="fa fa-home"></span></i><span>&nbsp;Inicio</span></a>
+			        </div>
+			        <div class="collapse navbar-collapse navbar-ex1-collapse">
+			            <ul class="nav navbar-nav">
+			                <li class="dropdown">
+			                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			                    Menú <b class="caret"></b>
+			                    </a>
+			                    <ul class="dropdown-menu">
+			                    	<li><a href='informacion.html'>&nbsp;<i><span class="fa fa-info"></span></i><span>&nbsp;&nbsp;&nbsp;Información General</span></a></li>
+			                    	<li><a href='integrantes.html'><i><span class="fa fa-group"></span></i><span>&nbsp;&nbsp;&nbsp;Integrantes</span></a></li>
+			                    	<li><a href='historia.html'><i><span class="fa fa-file-text"></span></i><span>&nbsp;&nbsp;&nbsp;Historia de la Orquesta</span></a></li>
+			                    	<li><a href='calendario.html'><i><span class="fa fa-calendar"></span></i><span>&nbsp;&nbsp;&nbsp;Calendario de Conciertos</span></a></li>
+			                    	<li><a href='instrumentos.html'><i><span class="fa fa-bullhorn"></span></i><span>&nbsp;&nbsp;&nbsp;Instrumentos</span></a></li>
+			                    	<li><a href="teoria.html"><i><span class="fa fa-music"></span></i><span>&nbsp;&nbsp;&nbsp;Teoría Musical</span></a></li>
+			                    	<li><a href="historias.html"><i><span class="fa fa-columns"></span></i><span>&nbsp;&nbsp;&nbsp;Historias Estudiantiles</span></a></li>
+									<li><a href='galeria.html'><i><span class="fa fa-folder-open"></span></i><span>&nbsp;&nbsp;&nbsp;Galería</span></a></li>
+			                    </ul>
+			                </li>
+			            </ul>
+			            <ul class="nav navbar-nav pull-right">
+			                               
+			                <li class='dropdown'>
+			                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+			                        <i class="fa fa-cog fa-fw"></i>Configuraciones <i class="fa fa-caret-down"></i>
+			                    </a>
+			                   <ul class="dropdown-menu dropdown-user">
+			                        <li><a href='#' onclick="flotante(1)"><i><span class="fa fa-user"></span></i><span>&nbsp;&nbsp;&nbsp;Administrar</span></a></li>
+			                        </li>
+			                        <li class="divider"></li>
+			                    </ul>
+			                </li>
+
+			            </ul>
+			        </div>
+			    </nav>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+			    <div id="cont" style="display:none;">
+				</div>
+			    <div id="flotante" class="flotante">
+					<div>
+						 <h3 class="title1">Iniciar Sesi&oacute;n <a onClick="flotante(2)" class="close"><i class="fa fa-close fa-1x" style="margin-right: 10px;"></i></a></h3>
+						
+					</div>
+					<div class="conte">
+						<label>Usuario</label>
+						<input type="text" class="form-control " class="form-control" placeholder="Usuario" id="uid" required ><br>
+						<label>Contrase&ntilde;a</label>
+						<input type="password" name=""  class="form-control " placeholder="Contrase&ntilde;a" id="contrase" required ><br>
+						<div width=100%>
+						<button id="login" type="submit" class="new btn" onclick="login()" style="margin-bottom: 10px;margin-right: 0px;margin-top: 5px;margin-left: 5px;">Iniciar sesi&oacute;n</button>
+			            </div>
+						<br>
+						<p>&nbsp;</p>
+					</div>
+			    </div>
+			    
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2 col-md-2 col-lg-2">
+				&nbsp;
+			</div> 
+			<div class="col-sm-8 col-md-8 col-lg-8">
+				<h3>Historia de la Orquesta.</h3>
+				<div class="panel panel-green">
+					<div class="panel-heading">
+						Historia.
+					</div>
+					<div class="panel-body" style="text-align: justify;">
+						
+						<h4>Orquesta Infanto-Juvenil de Ahuachapán</h4>
+						<center><img src="../imagenes/orquesta.jpg" class="img img-rounded img-responsive" style="width: 450px; height: 250px;"></center><br>
+Este proyecto nace en noviembre de 2013, con un curso de verano en la Casa de la Cultura de Ahuachapán, la idea fundamental era darle espacio a los jóvenes que no podían accesar a una clase de violín, viola, violoncello, contrabajo, teclado y guitarra elemental; ya que si bien es cierto hay otro programa de Orquesta, éste solo es para los estudiantes activos del Instituto Nacional Alejandro de Humboldt, dejando en desventaja a dos grupos de niños y jóvenes fuera del mismo. El primer grupo es todo aquel que no es estudiante y que no tiene como pagar una clase de instrumento, por su situación social, política, cultural y económica. El segundo grupo abarca los ex alumnos de ese Instituto, egresando ya no es posible que integren dicho programa.<br><br> 
+Por ello nace un proyecto bajo la dirección de un Director general, que es apoyado por un Comité, más el equipo de trabajo, que son estudiantes avanzados, ex alumnos del otro proyecto, cabe mencionar, que ambos proyectos son creados y dirigidos por el mismo maestro. El curso tuvo éxito y fue necesario en el 2014 abrir clases regulares, por la demanda que se tuvo, desde un principio se dejó claro que la escuela tendría dos clases de estudiantes los que pueden pagar la mensualidad y los becados, los requisitos de los becados, deberían ser que no pudieran pagar una clase, que quisieran aprender un instrumento que se enseñaba y que formaran parte de la orquesta, ya que la creación de este proyecto fundamentalmente es para estos niños y jóvenes.<br><br>
+Cada año desde su creación la Escuela tiene sus recitales, que sirven como antesala para que los estudiantes formen parte de la Orquesta, ya que esta tiene su temporada, donde se tocan de 4 a 5 conciertos, la Orquesta como tal la integran en un principio ex alumnos del instituto, sin embargo a través del tiempo, la integran también estudiantes producto de la escuela de música.<br><br>
+En el año 2015 la Orquesta Infanto-Juvenil de Ahuachapán se traslada a un local donde funciona la escuela y la orquesta hace sus ensayos seccionales y generales, esto le da mayor libertad con horarios y atención de más estudiantes.<br><br>
+En el año 2016 se hace un convenio con dos comunidades con problemas de violencia, para becar por un año a 10 niños de cada una, las edades entre 8 y 12 años, esto confirma el compromiso de la Institución con los que verdaderamente necesitan accesar al arte, pero que no tienen los medios, ni las oportunidades.<br><br>
+Los retos del año 2017 son grandes ya que se tiene previsto aumentar el número de estudiantes beneficiados con este proyecto sociocultural.<br>
+En este año 2017 estamos desarrollando la IV Temporada llamada “Jóvenes talentos de Ahuachapán” cuatro conciertos distribuidos en el año y que serán todos en el Centro para la Cultura y las Artes Dr. Alfredo Espino.
+
+					</div>
+					
+					<div class="panel-footer">
+						Historia de la Orquesta Infanto-Juvenil de Ahuachapán.
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2 col-md-2 col-lg-2">
+				&nbsp;
+			</div>
+		</div>
+	</div>
+	<footer style="width: 100%; height: 50px; background-color: #222222; color: #9d9d9d; text-align: center; padding-top:15px;">
+		<a href="http://www.facebook.com/Orquesta Infanto-Juvenil de Ahuachapán" style="color: #9d9d9d;"><i><span class="fa fa-facebook"></span></i>&nbsp;&nbsp;/Orquesta Infanto-Juvenil de Ahuachapán</i></a>
+		
+	</footer>
+</body>
+</html>

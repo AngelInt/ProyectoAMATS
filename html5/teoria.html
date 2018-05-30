@@ -1,0 +1,141 @@
+<html>
+<head>
+	<title>Orquesta Infanto-Juvenil de Ahuachapán</title>
+	<link rel="stylesheet" type="text/css" href="../boots/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../boots/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../boots/css/sb-admin-2.css">
+	<link rel="stylesheet" type="text/css" href="../boots/css/proyecto.css">
+
+
+	<script type="text/javascript" src="../boots/js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="../boots/js/bootstrap.js"></script>
+	<script type="text/javascript" src="../boots/js/proyecto.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+</head>
+
+<body style="margin-top: 70px; text-align: center;" background="../imagenes/fondo.png">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			        <div class="navbar-header">
+			            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+			                <span class="sr-only">Desplegar navegación</span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			            </button>
+			            <a class="navbar-brand" href="../index.html"><i><span class="fa fa-home"></span></i><span>&nbsp;Inicio</span></a>
+			        </div>
+			        <div class="collapse navbar-collapse navbar-ex1-collapse">
+			            <ul class="nav navbar-nav">
+			                <li class="dropdown">
+			                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			                    Menú <b class="caret"></b>
+			                    </a>
+			                     <ul class="dropdown-menu">
+			                    	<li><a href='informacion.html'>&nbsp;<i><span class="fa fa-info"></span></i><span>&nbsp;&nbsp;&nbsp;Información General</span></a></li>
+			                    	<li><a href='integrantes.html'><i><span class="fa fa-group"></span></i><span>&nbsp;&nbsp;&nbsp;Integrantes</span></a></li>
+			                    	<li><a href='historia.html'><i><span class="fa fa-file-text"></span></i><span>&nbsp;&nbsp;&nbsp;Historia de la Orquesta</span></a></li>
+			                    	<li><a href='calendario.html'><i><span class="fa fa-calendar"></span></i><span>&nbsp;&nbsp;&nbsp;Calendario de Conciertos</span></a></li>
+			                    	<li><a href='instrumentos.html'><i><span class="fa fa-bullhorn"></span></i><span>&nbsp;&nbsp;&nbsp;Instrumentos</span></a></li>
+			                    	<li><a href="teoria.html"><i><span class="fa fa-music"></span></i><span>&nbsp;&nbsp;&nbsp;Teoría Musical</span></a></li>
+			                    	<li><a href="historias.html"><i><span class="fa fa-columns"></span></i><span>&nbsp;&nbsp;&nbsp;Historias Estudiantiles</span></a></li>
+			                    	<li><a href='galeria.html'><i><span class="fa fa-folder-open"></span></i><span>&nbsp;&nbsp;&nbsp;Galería</span></a></li>
+			                    </ul>
+			                </li>
+			            </ul>
+			            <ul class="nav navbar-nav pull-right">
+			                               
+			                <li class='dropdown'>
+			                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+			                        <i class="fa fa-cog fa-fw"></i>Configuraciones <i class="fa fa-caret-down"></i>
+			                    </a>
+			                    <ul class="dropdown-menu dropdown-user">
+			                        <li><a href='#' onclick="flotante(1)"><i><span class="fa fa-user"></span></i><span>&nbsp;&nbsp;&nbsp;Administrar</span></a></li>
+			                        </li>
+			                        <li class="divider"></li>
+			                    </ul>
+			                </li>
+
+			            </ul>
+			        </div>
+			    </nav>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+			    <div id="cont" style="display:none;">
+				</div>
+			    <div id="flotante" class="flotante">
+					<div>
+						 <h3 class="title1">Iniciar Sesi&oacute;n <a onClick="flotante(2)" class="close"><i class="fa fa-close fa-1x" style="margin-right: 10px;"></i></a></h3>
+						
+					</div>
+					<div class="conte">
+						<label>Usuario</label>
+						<input type="text" class="form-control " class="form-control" placeholder="Usuario" id="uid" required ><br>
+						<label>Contrase&ntilde;a</label>
+						<input type="password" name=""  class="form-control " placeholder="Contrase&ntilde;a" id="contrase" required ><br>
+						<div width=100%>
+						<button id="login" type="submit" class="new btn" onclick="login()" style="margin-bottom: 10px;margin-right: 0px;margin-top: 5px;margin-left: 5px;">Iniciar sesi&oacute;n</button>
+			            </div>
+						<br>
+						<p>&nbsp;</p>
+					</div>
+			    </div>
+			    
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2 col-md-2 col-lg-2">
+				&nbsp;
+			</div> 
+			<div class="col-sm-8 col-md-8 col-lg-8">
+				<h3>Teoría Musical.</h3>
+				<div class="panel panel-green">
+					<div class="panel-heading">
+						Terminos básicos.
+					</div>
+					<div class="panel-body" style="text-align: justify;">
+						<center><img src="../imagenes/teoria.jpg" class="img img-rounded img-responsive" style="width: 300px; height: 150px;"></center><br>
+						<b>MÚSICA:</b> es el arte de bien combinar los sonidos y el tiempo. <br><br>
+Todos los caracteres y señales que sirven para la música corresponden a una de estas dos cosas a la primera que es el sonido, pertenecen las claves, signos, (o notas) sostenidos, bemoles, becuadros, letras y otras varias palabras, que puestas debajo o encima de los signos, no difican su sonido. En fin, al sonido corresponden todo lo que a éste afecta, haciéndolo ya grave o agudo, ya fuerte o débil.
+<br><br>
+Al tiempo pertenecen los aires, compases, figuras, puntillos, silencios, puntos de reposo y calderunes, las palabras acelerando, ritardando y otras varias, que puestas debajo o encima de las figuras, modifican su valor. En fin, al tiempo corresponde todo lo que a éste afecta, haciéndolo rápido o lento.
+<br><br>
+Todos estos caracteres se colocan en el PENTAGRAMA, que es el conjunto de cinco líneas y cuatro espacios, a lo cual se da vulgarmente el nombre de pauta o pautado.
+<br><br>
+El arte musical se divide en varios ramos, siendo el fundamento de todos ellos  el solfeo. Esta palabra proviene de los signos sol y fa, como la antigua salmización ser deriva de sol y mi. Solfeo es pues,  el arte de bien medir y entonar, dando a cada signo su propio nombre.
+<br>
+<hr>
+<h4>De lo que pertenece al SONIDO, que es la CLAVE y los SIGNOS.</h4>
+<b>LOS SIGNOS</b> o notas son los que denotan lo agudo o grave de los sonidos, según so colocación en el pentagrama: ellos son siete, y sus nombres son Do, Re, Mi, Fa, Sol, La, Si, que multiplicados hacia arriba y hacia abajo, forman todos los sonidos que producen las voces e instrumentos.
+<br><br>
+Como los signos no tienen una misma colocación en el pentagrama, es necesario determinarla por medio de una señal que se pone al principio, y que se llama clave: de consiguiente, <b>CLAVE</b> es la que fija la colocación que se da a los signos en el pentagrama.  Son varias las claves que hay: La primera es la de Sol, que se coloca en la segunda línea. Determinando por esta clave que el signo sol se coloca en la segunda línea, es fácil conocer el lugar que ocupan los demás. Véase el ejemplo siguiente con el cual se comprenderá bien la clave, signos, pentagrama y líneas adicionales.
+<br><br>
+<img src="../imagenes/penta.gif" class="img img-rounded img-responsive">
+<hr>
+<h4>De lo que pertenece al TIEMPO, que es el COMPÁS y FIGURAS.</h4>
+<b>COMPÁS</b> es una pequeña porción de tiempo, dividida en 2,3 ó 4 partes, que sirve para conocer el valor de las figuras. Existen varias especies de compases.
+<br><br>
+<b>FIGURA</b> es la diferente forma que se da a las notas musicales para determinar su duración.
+Téngase presente que se da el nombre de nota la reunión de signo y figura que expresan el sonido y su valor. Hay varias especies de figuras.
+					</div>
+					<div class="panel-footer">
+						Conocimientos Preliminares.
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2 col-md-2 col-lg-2">
+				&nbsp;
+			</div>
+		</div>
+	</div>
+	<footer style="width: 100%; height: 50px; background-color: #222222; color: #9d9d9d; text-align: center; padding-top:15px;">
+		<a href="http://www.facebook.com/Orquesta Infanto-Juvenil de Ahuachapán" style="color: #9d9d9d;"><i><span class="fa fa-facebook"></span></i>&nbsp;&nbsp;/Orquesta Infanto-Juvenil de Ahuachapán</i></a>
+		
+	</footer>
+</body>
+</html>

@@ -1,0 +1,175 @@
+.selected{
+  background-color:#DEEFF3;
+  cursor: pointer;
+}
+.no{
+  background-color:#fff;
+  cursor: default;
+}
+.noTh{
+  background-color:#fff;
+  cursor: default;
+}
+.noTh:hover{
+  background-color:#DEEFF3;
+  cursor: pointer;
+}
+th {
+	text-align: center;
+	background-color: #95dc95;
+}
+td {
+	text-align: center;
+}
+
+h4 {
+	text-align: center;
+  
+}
+h3{
+	text-align: center;
+  font-family: Book Antiqua;
+  font-size: 40px;
+  font-weight: bolder;
+  font-style: italic;
+  color: #337ab7;
+
+}
+.comp2 {
+  margin: 0px;
+  width: 45%;
+  float:left;
+  vertical-align: center;
+}
+
+.com3 {
+  margin-right: 10px;
+  width: 33%;
+  float:left;
+}
+
+.com4 {
+  margin-right: 10px;
+  width: 24%;
+  float:left;
+}
+.new
+    {
+        float: right;
+        background-color: #5cb85c;
+        color: #fff;
+        font-size: 16px;
+        height: 35px;
+        border-radius: 3px;
+    	margin: 5px;
+      	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+      	background-color: #5cb85c;
+      	*background-color: #5cc1a0;
+      	background-image: -moz-linear-gradient(top, #5cb85c, #5cc1a0);
+      	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5cb85c), to(#5cc1a0));
+      	background-image: -webkit-linear-gradient(top, #5cb85c, #5cc1a0);
+      	background-image: -o-linear-gradient(top, #5cb85c, #5cc1a0);
+      	background-image: linear-gradient(to bottom, #5cb85c, #5cc1a0);
+      	background-repeat: repeat-x;
+      	border-color: #5cc1a0 #5cc1a0 #387038;
+      	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+      	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);
+      	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    }
+    .errorbtn
+    {
+        float: right;
+        color: #fff;
+        font-size: 16px;
+        height: 35px;
+        border-radius: 3px;
+	    margin: 15px;
+	    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	    background-color: #5cb85c;
+	    *background-color: #F92B2B;
+	    background-image: -moz-linear-gradient(top, #5cb85c, #F92B2B);
+	    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5cb85c), to(#F92B2B));
+	    background-image: -webkit-linear-gradient(top, #5cb85c, #F92B2B);
+	    background-image: -o-linear-gradient(top, #5cb85c, #F92B2B);
+	    background-image: linear-gradient(to bottom, #5cb85c, #F92B2B);
+	    background-repeat: repeat-x;
+	    border-color: #F92B2B #F92B2B #387038;
+	    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);
+	    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    }
+  .new:hover,
+  .new:focus,
+  .new:active
+    {
+        float: right;
+        background-color:#eee;
+        color: #fff;
+   		background-color: #458a45;
+    	*background-color: #499249;
+    	background-image: -moz-linear-gradient(top, #5cb85c, #499249);
+	    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5cb85c), to(#499249));
+	    background-image: -webkit-linear-gradient(top, #5cb85c, #499249);
+	    background-image: -o-linear-gradient(top, #5cb85c, #499249);
+	    background-image: linear-gradient(to bottom, #5cb85c, #499249);
+	    background-repeat: repeat-x;
+	    border-color: #499249 #499249 #387038;
+	    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff62c462', endColorstr='#ff51a351', GradientType=0);
+	    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    }
+    .close
+    {
+        color: #e0022b;
+    }
+  .title1
+    {
+        color:#fff;
+    	font-size:18px;
+      background-color: #5cb85c;
+    	padding-left: 12px;
+    	margin-top: 0px;
+    	height: 35px;
+    	padding-top: 8px;
+    }
+    .close:hover
+    {
+        color: #e0022b;
+    }
+	.conte
+	{
+	   margin:12px;
+	}
+    .flotante 
+    {
+    z-index: 999; 
+    border: 0px solid #777; 
+    margin-top: -1756px; 
+    margin-left: -153px; 
+    top: 50%; left: 50%; 
+    padding: 0px; 
+    position: fixed;
+    width: 310px; 
+    background-color: #fff; 
+    border-radius: 3px;
+    color: #5cb85c;
+    padding-top: 0px;
+    overflow-y: auto;
+    }
+  
+  #registro.flotante{
+    margin-top: -1840px;
+  }
+  #cont 
+    {
+      margin-top: -400px;
+      margin-left: -200px;
+      opacity: 0.5;
+    z-index: 999; 
+        padding: 0px; 
+        position: fixed; 
+        width: 200%; 
+        background-color: #999999; 
+        border-radius: 0px;
+        height: 200%;
+    }

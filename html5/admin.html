@@ -1,0 +1,304 @@
+﻿<html>
+<head>
+	<title>Orquesta Infanto-Juvenil de Ahuachapán</title>
+	<link rel="stylesheet" type="text/css" href="../boots/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../boots/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../boots/css/sb-admin-2.css">
+	<link rel="stylesheet" type="text/css" href="../boots/css/proyecto.css">
+
+	<script type="text/javascript" src="../boots/js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="../boots/js/bootstrap.js"></script>
+	<script type="text/javascript" src="../boots/js/proyecto.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+</head>
+<body style="margin-top: 70px; text-align: center;" background="../imagenes/fondo.png">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			        <div class="navbar-header">
+			            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+			                <span class="sr-only">Desplegar navegación</span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			            </button>i
+			            <a class="navbar-brand" href="admin.html"><i><span class="fa fa-home"></span></i><span>&nbsp;Inicio</span></a>
+			        </div>
+			        <div class="collapse navbar-collapse navbar-ex1-collapse">
+			            <ul class="nav navbar-nav">
+			                <li class="dropdown">
+			                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			                    Menú <b class="caret"></b>
+			                    </a>
+			                    <ul class="dropdown-menu">
+
+			                    	<li><a href='#Integrantes'><i><span class="fa fa-group"></span></i><span>&nbsp;&nbsp;&nbsp;Integrantes</span></a></li>
+			                    	<li><a href='#Calendario'><i><span class="fa fa-calendar"></span></i><span>&nbsp;&nbsp;&nbsp;Calendario de Conciertos</span></a></li>
+			                    	<li><a href="#Historias"><i><span class="fa fa-columns"></span></i><span>&nbsp;&nbsp;&nbsp;Historias Estudiantiles</span></a></li>
+			                    </ul>
+			                </li>
+			            </ul>
+			            <ul class="nav navbar-nav pull-right">
+			                               
+			                <li class='dropdown'>
+			                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+			                        <i class="fa fa-cog fa-fw"></i>Configuraciones <i class="fa fa-caret-down"></i>
+			                    </a>
+			                    <ul class="dropdown-menu dropdown-user">
+			                        <!--li><a href='#' onclick='flotante(3)'><i><span class="fa fa-key"></span></i><span>&nbsp;&nbsp;&nbsp;Cambiar<br>&nbsp;&nbsp;&nbsp;&nbsp;Contraseña</span></a></li>
+			                        <li class="divider"></li-->
+			                        <li><a href='../index.html' ><i><span class="fa fa-user"></span></i><span>&nbsp;&nbsp;&nbsp;Cerrar Sesión</span></a></li>
+			                        <li class="divider"></li>
+			                        
+
+			                        </li>
+			                    </ul>
+			                </li>
+
+			            </ul>
+			        </div>
+			    </nav>
+			</div>
+		</div>
+		<!--div class="row">
+			<div class="col-lg-12">
+			    <div id="cont" style="display:none;">
+				</div>
+			    <div id="cambiarClave" class="flotante">
+					<div>
+						 <h3 class="title1">Cambiar Contraseña<a onClick="flotante(2)" class="close"><i class="fa fa-close fa-1x" style="margin-right: 10px;"></i></a></h3>
+						
+					</div>
+					<div class="conte">
+						<label>Contraseña</label>
+						<input type="password" class="form-control " class="form-control" placeholder="Escriba su contraseña" id="clave" required ><br>
+						<label>Confirme su Contrase&ntilde;a</label>
+						<input type="password" name=""  class="form-control " placeholder="Contrase&ntilde;a" id="clave1" required ><br>
+						<input type="checkbox" id="mostrar" onClick="mostrar()">&nbsp;Mostrar Contraseña
+						<div width=100%>
+						<button id="login" type="submit" class="new btn" onClick="cambiarClave();" style="margin-bottom: 10px;margin-right: 0px;margin-top: 5px;margin-left: 5px;">Cambiar Contraseña</button>
+
+			            </div>
+						<br>
+						<p>&nbsp;</p>
+					</div>
+			    </div>
+			    
+			</div>
+		</div-->
+		<div class="row">
+			<div class="col-sm-2 col-md-2 col-lg-2">
+				&nbsp;
+			</div> 
+			<div class="col-sm-8 col-md-8 col-lg-8">
+			<h3><a id="Integrantes">Integrantes.</a></h3>
+				<div class="panel panel-green">
+					<div class="panel-heading">
+						Editar integrantes
+					</div>
+					<div class="panel-body" style="text-align: justify;">
+						<fieldset>
+							<legend>
+								<center>Agregar Integrante.</center>
+							</legend>
+							<center>
+							<table>
+								<form name="form1">
+							<tr><td><label>Nombres:<input type="text" id="nombre" class="form-control" required></label></td><td><blockquote>&nbsp;</blockquote></td>
+							<td><label>Apellidos:<input type="text" id="apellido" class="form-control" required></label></td><tr>
+							<tr><td><label>Edad:<input type="number" id="edad" class="form-control" required></label></td><td><blockquote>&nbsp;</blockquote></td>
+							<td><label>Instrumento:<input type="text" id="instrumento" class="form-control" required></label></td><tr>
+							<tr><td><label>Institución donde estudia:<input type="text" id="instituto" class="form-control" required></label></td><td><blockquote>&nbsp;</blockquote></td>
+							<td><label>Nivel de estudio:<select id="estudio" class="form-control" required><option value="segundoCiclo">Segundo Ciclo</option><option value="tercerCiclo">Tercer Ciclo</option><option value="bachillerato">Bachillerato</option><option value="estudiosSuperiores">Estudios Superiores</option></label></td><tr>
+							<tr><td colspan="3"><br></td><tr>
+							<tr><td colspan="3"><label><input type="submit" onClick="addInte()" value="Agregar Integrante"></label>&nbsp;&nbsp;&nbsp;<label><input type="reset"></label></td><tr>
+								</form>
+							</table>
+							</center><br>
+							
+							<legend>
+								<center>Eliminar Integrante.</center>
+							</legend>
+							<center><label>Seleccione el/los integrantes para eliminar</label></center>
+							<div>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="inte1">
+								<input type="checkbox" name="inte">&nbsp;&nbsp;&nbsp;Steven David Hernandez Guerrero.
+							</label>
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="inte2">
+								<input type="checkbox" name="inte">&nbsp;&nbsp;&nbsp;Erika Noemi Aquino Campos.
+							</label>
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="inte3">
+								<input type="checkbox" name="inte">&nbsp;&nbsp;&nbsp;Emely Lizbeth Fernández Guerrero.
+							</label>
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="inte4">
+								<input type="checkbox" name="inte">&nbsp;&nbsp;&nbsp;Alexis Armando Eguizabal.
+							</label>
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="inte5">
+								<input type="checkbox" name="inte">&nbsp;&nbsp;&nbsp;Diego Alberto Sierra.
+							</label>
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="inte6">
+								<input type="checkbox" name="inte">&nbsp;&nbsp;&nbsp;Tania Michelle Sierra.
+							</label>
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="inte7">
+								<input type="checkbox" name="inte">&nbsp;&nbsp;&nbsp;Marta Alexandra Sanchez Perez.
+							</label>
+								<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="inte8">
+								<input type="checkbox" name="inte">&nbsp;&nbsp;&nbsp;Abigail del Carmen Sanchez Perez.
+							</label>
+								<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="inte9">
+								<input type="checkbox" name="inte">&nbsp;&nbsp;&nbsp;Marcela Beatriz Moran Mendoza.
+							</label>
+								<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="inte10">
+								<input type="checkbox" name="inte">&nbsp;&nbsp;&nbsp;Diana Lisset Aquino Rivera.
+							</label>
+								<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="inte11">
+								<input type="checkbox" name="inte">&nbsp;&nbsp;&nbsp;Gabriela Velasquez.
+							</label>
+								<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="inte12">
+								<input type="checkbox" name="inte">&nbsp;&nbsp;&nbsp;Esau Rivera.
+							</label>
+								<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="inte13">
+								<input type="checkbox" name="inte">&nbsp;&nbsp;&nbsp;Leonardo Arévalo.
+							</label>
+								<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label id="inte14">
+								<input type="checkbox" name="inte">&nbsp;&nbsp;&nbsp;Rafael Alejandro Rodriguez.
+							</label>
+								<br>
+							</div>
+							
+							<center>
+							<label>
+							<input type="button" value="Eliminar Integrante" onClick="del()">
+							</label>
+							</center>
+
+						</fieldset>
+					</div>
+					
+					<div class="panel-footer">
+						Integrantes Orquesta Infanto-Juvenil de Ahuachapán 2017.
+					</div>
+				</div>
+			<h3><a id="Calendario">Calendario.</a></h3>
+				<div class="panel panel-green">
+					<div class="panel-heading">
+						Editar eventos
+					</div>
+					<div class="panel-body" style="text-align: justify;">
+						<fieldset>
+							<legend>
+								<center>Agregar Evento.</center>
+							</legend>
+							<center>
+							<table>
+								<form name="form2">
+							<tr><td><label>Fecha:<input type="date" id="fecha" class="form-control" required></label></td><td><blockquote>&nbsp;</blockquote></td>
+							<td><label>Actividad:<input type="text" id="actividad" class="form-control" required></label></td><tr>
+							<tr><td><label>Lugar:<input type="text" id="lugar" class="form-control" required></label></td><td><blockquote>&nbsp;</blockquote></td>
+							<td><label>Hora:<input type="time" id="hora" class="form-control" required></label></td><tr>
+							<tr><td colspan="3"><br></td><tr>
+							<tr><td colspan="3"><label><input type="submit" onClick="addInte1()" value="Agregar Evento"></label>&nbsp;&nbsp;&nbsp;<label><input type="reset"></label></td><tr>
+								</form>
+							</table>
+							</center><br>
+							
+							<legend>
+								<center>Eliminar Evento.</center>
+							</legend>
+							<center><label>Seleccione el/los elementos para eliminar</label></center>
+							<div>							<label id="even1">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="even">&nbsp;&nbsp;&nbsp;I Concierto Jóvenes Talentos de Ahuachapán.
+							</label>
+							<br>
+							<label id="even2">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="even">&nbsp;&nbsp;&nbsp;II Concierto Jóvenes Talentos de Ahuachapán.
+							</label>
+							<br>
+							<label id="even3">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="even">&nbsp;&nbsp;&nbsp;III Concierto Jóvenes Talentos de Ahuachapán.
+							</label>
+							<br>
+							<label id="even4">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="even">&nbsp;&nbsp;&nbsp;IV Concierto Jóvenes Talentos de Ahuachapán.
+							</label>
+							
+							<center>
+							<label>
+							<input type="button" value="Eliminar Integrante" onClick="led()" required>
+							</label>
+							</center>
+							</div>
+						</fieldset>
+					
+							
+					</div>
+					
+					<div class="panel-footer">
+						Calendario Orquesta Infanto-Juvenil de Ahuachapán 2017.
+					</div>
+				</div>
+
+				<h3><a id="Historias">Historias Estudiantiles.</a></h3>
+				<div class="panel panel-green">
+					<div class="panel-heading">
+						crear historia
+					</div>
+					<div class="panel-body" style="text-align: justify;">
+						<fieldset>
+							<legend>
+								<center>Agregar Historia.</center>
+							</legend>
+							<form name="form3">
+								<center>
+								<textarea id="historia" rows="10" cols="70" required></textarea>
+								<br>
+								<br>
+								<label>Agregar Fotografía:<br><input type="file" name="fotografia"></label>
+								<br>
+								<br>
+								<label><input type="submit" onClick="addInte2()" value="Agregar"></label>
+								</center>
+							</form>
+							<script>
+														
+
+
+							</script>
+
+							
+						</fieldset>
+					
+							
+					</div>
+					
+					<div class="panel-footer">
+						Historias Orquesta Infanto-Juvenil de Ahuachapán 2017.
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2 col-md-2 col-lg-2">
+				&nbsp;
+			</div>
+		</div>
+	</div>
+	<footer style="width: 100%; height: 50px; background-color: #222222; color: #9d9d9d; text-align: center; padding-top:15px;">
+		<a href="http://www.facebook.com/Orquesta Infanto-Juvenil de Ahuachapán" style="color: #9d9d9d;"><i><span class="fa fa-facebook"></span></i>&nbsp;&nbsp;/Orquesta Infanto-Juvenil de Ahuachapán</i></a>
+		
+	</footer>
+</body>
+</html>

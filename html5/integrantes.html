@@ -1,0 +1,181 @@
+<html>
+<head>
+	<title>Orquesta Infanto-Juvenil de Ahuachapán</title>
+	<link rel="stylesheet" type="text/css" href="../boots/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../boots/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../boots/css/sb-admin-2.css">
+	<link rel="stylesheet" type="text/css" href="../boots/css/proyecto.css">
+
+	<script type="text/javascript" src="../boots/js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="../boots/js/bootstrap.js"></script>
+	<script type="text/javascript" src="../boots/js/proyecto.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+</head>
+
+<body style="margin-top: 70px; text-align: center;" background="../imagenes/fondo.png">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			        <div class="navbar-header">
+			            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+			                <span class="sr-only">Desplegar navegación</span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			                <span class="icon-bar"></span>
+			            </button>
+			            <a class="navbar-brand" href="../index.html"><i><span class="fa fa-home"></span></i><span>&nbsp;Inicio</span></a>
+			        </div>
+			        <div class="collapse navbar-collapse navbar-ex1-collapse">
+			            <ul class="nav navbar-nav">
+			                <li class="dropdown">
+			                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			                    Menú <b class="caret"></b>
+			                    </a>
+			                     <ul class="dropdown-menu">
+			                    	<li><a href='informacion.html'>&nbsp;<i><span class="fa fa-info"></span></i><span>&nbsp;&nbsp;&nbsp;Información General</span></a></li>
+			                    	<li><a href='integrantes.html'><i><span class="fa fa-group"></span></i><span>&nbsp;&nbsp;&nbsp;Integrantes</span></a></li>
+			                    	<li><a href='historia.html'><i><span class="fa fa-file-text"></span></i><span>&nbsp;&nbsp;&nbsp;Historia de la Orquesta</span></a></li>
+			                    	<li><a href='calendario.html'><i><span class="fa fa-calendar"></span></i><span>&nbsp;&nbsp;&nbsp;Calendario de Conciertos</span></a></li>
+			                    	<li><a href='instrumentos.html'><i><span class="fa fa-bullhorn"></span></i><span>&nbsp;&nbsp;&nbsp;Instrumentos</span></a></li>
+			                    	<li><a href="teoria.html"><i><span class="fa fa-music"></span></i><span>&nbsp;&nbsp;&nbsp;Teoría Musical</span></a></li>
+			                    	<li><a href="historias.html"><i><span class="fa fa-columns"></span></i><span>&nbsp;&nbsp;&nbsp;Historias Estudiantiles</span></a></li>
+			                    	<li><a href='galeria.html'><i><span class="fa fa-folder-open"></span></i><span>&nbsp;&nbsp;&nbsp;Galería</span></a></li>
+			                    </ul>
+			                </li>
+			            </ul>
+			            <ul class="nav navbar-nav pull-right">
+			                               
+			                <li class='dropdown'>
+			                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+			                        <i class="fa fa-cog fa-fw"></i>Configuraciones <i class="fa fa-caret-down"></i>
+			                    </a>
+			                    <ul class="dropdown-menu dropdown-user">
+			                        <li><a href='#' onclick="flotante(1)"><i><span class="fa fa-user"></span></i><span>&nbsp;&nbsp;&nbsp;Administrar</span></a></li>
+			                        </li>
+			                        <li class="divider"></li>
+			                    </ul>
+			                </li>
+
+			            </ul>
+			        </div>
+			    </nav>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+			    <div id="cont" style="display:none;">
+				</div>
+			    <div id="flotante" class="flotante">
+					<div>
+						 <h3 class="title1">Iniciar Sesi&oacute;n <a onClick="flotante(2)" class="close"><i class="fa fa-close fa-1x" style="margin-right: 10px;"></i></a></h3>
+						
+					</div>
+					<div class="conte">
+						<label>Usuario</label>
+						<input type="text" class="form-control " class="form-control" placeholder="Usuario" id="uid" required ><br>
+						<label>Contrase&ntilde;a</label>
+						<input type="password" name=""  class="form-control " placeholder="Contrase&ntilde;a" id="contrase" required ><br>
+						<div width=100%>
+						<button id="login" type="submit" class="new btn" onclick="login()" style="margin-bottom: 10px;margin-right: 0px;margin-top: 5px;margin-left: 5px;">Iniciar sesi&oacute;n</button>
+			            </div>
+						<br>
+						<p>&nbsp;</p>
+					</div>
+			    </div>
+			    
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2 col-md-2 col-lg-2">
+				&nbsp;
+			</div> 
+			<div class="col-sm-8 col-md-8 col-lg-8">
+				<h3>Integrantes.</h3>
+				<div class="panel panel-green">
+					<div class="panel-heading">
+						Orquesta Infanto-Juvenil de Ahuachapán.
+					</div>
+										
+					<div class="panel-body" style="text-align: justify;">
+						<center><img src="../imagenes/integrantes.png" class="img img-rounded img-responsive" style="width: 275px; height: 150px;"></center>
+						<hr>
+						<b>Nombre:</b> Steven David Hernandez Guerrero.<br><br>
+						<b>Tiempo en la Orquesta:</b> 5 meses.<br><br>
+						<b>Instrumento:</b> violín.
+						<hr>
+						<b>Nombre:</b> Erika Noemi Aquino Campos.<br><br>
+						<b>Tiempo en la Orquesta:</b> 5 meses.<br><br>
+						<b>Instrumento:</b> violín.
+						<hr>
+						<b>Nombre:</b> Emely Lizbeth Fernández Guerrero.<br><br>
+						<b>Tiempo en la Orquesta:</b> 5 meses.<br><br>
+						<b>Instrumento:</b> violín.
+						<hr>
+						<b>Nombre:</b> Alexis Armando Eguizabal.<br><br>
+						<b>Tiempo en la Orquesta:</b> 1 mes.<br><br>
+						<b>Instrumento:</b> violín.
+						<hr>
+						<b>Nombre:</b> Diego Alberto Sierra.<br><br>
+						<b>Tiempo en la Orquesta:</b> 1 mes.<br><br>
+						<b>Instrumento:</b> violín.
+						<hr>
+						<b>Nombre:</b> Tania Michelle Sierra.<br><br>
+						<b>Tiempo en la Orquesta:</b> 1 mes.<br><br>
+						<b>Instrumento:</b> violín.
+						<hr>
+						<b>Nombre:</b> Marta Alexandra Sanchez Perez.<br><br>
+						<b>Tiempo en la Orquesta:</b> 9 meses.<br><br>
+						<b>Instrumento:</b> violín.
+						<hr>
+						<b>Nombre:</b> Abigail del Carmen Sanchez Perez.<br><br>
+						<b>Tiempo en la Orquesta:</b> 9 meses.<br><br>
+						<b>Instrumento:</b> violín.
+						<hr>
+						<b>Nombre:</b> Marcela Beatriz Moran Mendoza.<br><br>
+						<b>Tiempo en la Orquesta:</b> 9 meses.<br><br>
+						<b>Instrumento:</b> violín.
+						<hr>
+						<b>Nombre:</b> Diana Lisset Aquino Rivera.<br><br>
+						<b>Tiempo en la Orquesta:</b> 7 meses.<br><br>
+						<b>Instrumento:</b> violín.
+						<hr>
+						<b>Nombre:</b> Gabriela Velasquez.<br><br>
+						<b>Tiempo en la Orquesta:</b> 7 meses.<br><br>
+						<b>Instrumento:</b> violín.
+						<hr>
+						<b>Nombre:</b> Esau Rivera.<br><br>
+						<b>Tiempo en la Orquesta:</b> 1 año.<br><br>
+						<b>Instrumento:</b> violín.
+						<hr>
+						<b>Nombre:</b> Leonardo Arévalo.<br><br>
+						<b>Tiempo en la Orquesta:</b> 1 año 6 meses.<br><br>
+						<b>Instrumento:</b> violín.
+						<hr>
+						<b>Nombre:</b> Rafael Alejandro Rodriguez.<br><br>
+						<b>Tiempo en la Orquesta:</b> 9 meses.<br><br>
+						<b>Instrumento:</b> violín.
+						<hr>
+						
+
+
+					</div>
+					
+					<div class="panel-footer">
+						Integrantes año 2017.
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-2 col-md-2 col-lg-2">
+				&nbsp;
+			</div>
+		</div>
+	</div>
+	<footer style="width: 100%; height: 50px; background-color: #222222; color: #9d9d9d; text-align: center; padding-top:15px;">
+		<a href="http://www.facebook.com/Orquesta Infanto-Juvenil de Ahuachapán" style="color: #9d9d9d;"><i><span class="fa fa-facebook"></span></i>&nbsp;&nbsp;/Orquesta Infanto-Juvenil de Ahuachapán</i></a>
+		
+	</footer>
+</body>
+</html>
